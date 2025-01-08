@@ -7,6 +7,9 @@ keep_alive = 5              # Tempo em segundos para conexões Keep-Alive
 limits = { forms = "32 KiB" }  # Limite de tamanho para dados enviados via formulário
 temp_dir = "/tmp"           # Diretório temporário para uploads
 
+[default.databases.mongodb]
+url = "mongodb://${MONGO_URL}"      #String de conexão do Mongo
+
 [debug]
 log_level = "normal"
 
